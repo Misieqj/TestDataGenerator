@@ -1,6 +1,7 @@
 using System;
 using NUnit.Framework;
-using TestDataGenerator.Models;
+using TestDataGenerator.Models.Generators;
+using TestDataGenerator.Models.Validators;
 
 namespace TestDataGenerator.Tests
 {
@@ -26,13 +27,13 @@ namespace TestDataGenerator.Tests
             _result = _pesel.Generate();
             PrintResults("Generowanie bez parametrów", _result);
 
-            _result = _pesel.GenerateFromDate(new DateTime(1984, 03, 05));
+            _result = _pesel.SetAgeFromBday(new DateTime(1984, 03, 05)).Generate();
             PrintResults("Generowanie dla konkretnej daty", _result);
             
-            _result = _pesel.GenerateFromAge(20);
+            _result = _pesel.SetAge(20).Generate();
             PrintResults("Generowanie dla konkretnego wieku", _result);
 
-            _result = _pesel.GenerateFromAgeRange(20, 25);
+            _result = _pesel.SetAgeRange(20, 25).Generate();
             PrintResults("Generowanie dla zakresu lat", _result);
         }
     
@@ -40,10 +41,10 @@ namespace TestDataGenerator.Tests
         public void PeselValidationTests() {
             Console.WriteLine("Test walidacji numeru pesel");
 
-            _isCorrect = _pesel.Validate("18222872772");
+            _isCorrect = PeselValidate.IsCorrect("18222872772");
             PrintResults("Weryfikacja poprawnego numeru", _isCorrect.ToString());
 
-            _isCorrect = _pesel.Validate("18222872777");
+            _isCorrect = PeselValidate.IsCorrect("18222872777");
             PrintResults("Weryfikacja błędnego numeru", _isCorrect.ToString());
         }
 

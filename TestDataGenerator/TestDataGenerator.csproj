@@ -33,7 +33,10 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-      <Compile Include="Models\Pesel.cs" />
+      <Compile Include="Models\Data\Enums\Gender.cs" />
+      <Compile Include="Models\Data\PeselChecksum.cs" />
+      <Compile Include="Models\Generators\Pesel.cs" />
+      <Compile Include="Models\Validators\PeselValidate.cs" />
       <Compile Include="Tests\PeselTests.cs" />
     </ItemGroup>
     <ItemGroup>
