@@ -1,0 +1,13 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=60bdb8e2_002D3a6b_002D45f9_002D9c76_002Dbc2a2b3a5fac/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="PeselTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::858DD5C6-3996-416E-8747-C4E02AC2C3A2::.NETFramework,Version=v4.8::TestDataGenerator.Tests.PeselTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::858DD5C6-3996-416E-8747-C4E02AC2C3A2::.NETFramework,Version=v4.8::TestDataGenerator.Tests.NipTests.PeselGenerationTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::858DD5C6-3996-416E-8747-C4E02AC2C3A2::.NETFramework,Version=v4.8::TestDataGenerator.Tests.NipTests.NipGenerationTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::858DD5C6-3996-416E-8747-C4E02AC2C3A2::.NETFramework,Version=v4.8::TestDataGenerator.Tests.PeselTests.PeselGenerationTest&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::858DD5C6-3996-416E-8747-C4E02AC2C3A2::.NETFramework,Version=v4.8::TestDataGenerator.Tests.PeselTests.PeselValidationTests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;858DD5C6-3996-416E-8747-C4E02AC2C3A2/d:Tests/f:NipTests.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
